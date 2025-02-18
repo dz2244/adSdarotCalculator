@@ -1,6 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/ad_han"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="handsit"
+        android:text="הנדסית" />
+
+    <Button
+        android:id="@+id/ad_hes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="hesbonit"
+        android:text="חשבונית" />
+
+    <EditText
+        android:id="@+id/ab_a1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:ems="10"
+        android:hint="firstnum"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/ab_kef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:ems="10"
+        android:hint="kefel"
+        android:inputType="textPassword" />
 
 </LinearLayout>

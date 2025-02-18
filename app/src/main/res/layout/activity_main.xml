@@ -1,82 +1,62 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    android:padding="16dp">
+
 
     <ListView
-        android:id="@+id/lv"
+        android:id="@+id/data_list"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_marginEnd="0dp"
-        android:layout_weight="1" >
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:padding="8dp">
 
     </ListView>
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tvFirstItem"
+            android:id="@+id/x1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginStart="0dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:text="first num:" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:text="X₁=" />
 
         <TextView
-            android:id="@+id/tvMult"
+            android:id="@+id/d"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:hint="מכפיל"
-            android:text="d:" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:text="d=" />
 
         <TextView
-            android:id="@+id/tvIndex"
+            android:id="@+id/n"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginStart="0dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:text="Item:" />
+            android:text="n=" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="3" />
 
-        <TextView
-            android:id="@+id/tvSum"
+        <Button
+            android:id="@+id/btn_enter"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:text="sum:" />
+            android:onClick="enter_alert"
+            android:text="Data Enter" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
     </LinearLayout>
+
 
 </LinearLayout>
