@@ -9,13 +9,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     TextView tvFirstItem,tvMult,tvIndex,tvSum;
     ListView lv;
-    Button btnBack;
 
     boolean type;
     double firstNum,d,num;
@@ -30,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         tvIndex = findViewById(R.id.tvIndex);
         tvSum = findViewById(R.id.tvSum);
         lv = findViewById(R.id.lv);
-        btnBack = findViewById(R.id.btnRet);
 
         Intent get = getIntent();
         firstNum = get.getDoubleExtra("first", 1);
