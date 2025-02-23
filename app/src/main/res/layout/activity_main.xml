@@ -43,6 +43,13 @@
             android:layout_weight="1"
             android:text="n=" />
 
+        <TextView
+            android:id="@+id/Sn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="sn =" />
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"

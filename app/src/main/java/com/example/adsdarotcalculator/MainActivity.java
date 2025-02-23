@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
         btn_enter = findViewById(R.id.btn_enter);
         data_list = findViewById(R.id.data_list);
-        x1 = findViewById(R.id.d);
+        x1 = findViewById(R.id.x1);
         d = findViewById(R.id.d);
         n = findViewById(R.id.n);
         Sn = findViewById(R.id.Sn);
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         String num1 = menu.getTitle().toString();
         if(num1.equals("home"))
         {
-            if(num ==1 )
+            if(num == 1 )
             {
 
             }
@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
         else
         {
-            Intent si = new Intent(this, Page2.class);
+            Intent si = new Intent(this, credits.class);
             startActivity(si);
 
         }
