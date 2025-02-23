@@ -24,7 +24,7 @@ public class credits extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem menu)
     {
         String num1 = menu.getTitle().toString();
-        if(num1.equals("home"))
+        if(num1.equals("main"))
             finish();
 
         return super.onOptionsItemSelected(menu);

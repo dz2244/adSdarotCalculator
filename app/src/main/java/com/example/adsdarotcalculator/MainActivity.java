@@ -31,8 +31,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     double x12=0;
     int num = 1 ;
 
-    double sum= 0 ;
-    int position =0;
     Button btn_enter, ad_han, ad_hes;
     boolean sedra = false;
     String error = "Invalid input please enter again number";
@@ -153,29 +151,27 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         if(sedra)
         {
             n.setText("n= hesbonit");
-        } else {
+        }
+        else {
             n.setText("n=  handsit");
         }
         Sn.setText("Sn= " + arr[pos]);
     }
 
-    public boolean onOptionsItemSelected(MenuItem menu)
-    {
+    public boolean onOptionsItemSelected(MenuItem menu) {
         String num1 = menu.getTitle().toString();
-        if(num1.equals("home"))
+        if(num1.equals("main"))
         {
-            if(num == 1 )
+            if(num ==1 )
             {
 
             }
             else
                 finish();
         }
-        else
-        {
+        else {
             Intent si = new Intent(this, credits.class);
             startActivity(si);
-
         }
 
         return super.onOptionsItemSelected(menu);
